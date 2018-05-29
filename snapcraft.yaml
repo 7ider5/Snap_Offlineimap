@@ -1,0 +1,18 @@
+name: offlineimap
+version: git
+summary: OfflineIMAP
+description: |
+  OfflineIMAP is a software that download your email malbox(es) as local Maildirs. OfflineIMAP will synchronize both sides via IMAP.
+  
+grade: deval
+confinement: devmode
+
+apps:
+  offlineimpa:
+    command: bin/offlineimap
+
+parts:
+  offlineimap:
+    plugin: python
+    python-version: python2
+    source: .
