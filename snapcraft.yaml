@@ -15,4 +15,4 @@ parts:
     plugin: python
     python-version: python2
     source: https://github.com/7ider5/snap_serial.git
-    source-tag: 
+    source-tag: v0.1
