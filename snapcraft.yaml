@@ -1,10 +1,9 @@
-name: offlineimap
-version: git
-summary: OfflineIMAP
+name: snap_serial
+version: '0.1'
+summary: Serialtest
 description: |
-  OfflineIMAP is a software that download your email malbox(es) as local Maildirs. OfflineIMAP will synchronize both sides via IMAP.
-  
-grade: deval
+  Test serial port  
+grade: devel
 confinement: devmode
 
 apps:
@@ -12,7 +11,8 @@ apps:
     command: bin/offlineimap
 
 parts:
-  offlineimap:
+  snap_serial:
     plugin: python
     python-version: python2
-    source: .
+    source: https://github.com/7ider5/snap_serial.git
+    source-tag: 
